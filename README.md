@@ -1,4 +1,4 @@
-Hierarchical Clustering: Agglomerative vs Divisive (Scikit-learn & SciPy)
+# Hierarchical Clustering: Agglomerative vs Divisive (Scikit-learn & SciPy)
 A simple demonstration of Hierarchical (Agglomerative) Clustering using synthetic data, complete with dendrogram visualization and cluster interpretation.
 
 This repository demonstrates the concept of **Hierarchical Clustering**, one of the fundamental unsupervised learning techniques used to build nested clusters. It covers both major types:
