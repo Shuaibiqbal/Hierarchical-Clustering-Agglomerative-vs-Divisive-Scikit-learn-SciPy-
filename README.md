@@ -1,29 +1,50 @@
-# Visualizing-Hierarchical-Clustering-with-Dendrograms-Scikit-learn-SciPy-
+Hierarchical Clustering: Agglomerative vs Divisive (Scikit-learn & SciPy)
 A simple demonstration of Hierarchical (Agglomerative) Clustering using synthetic data, complete with dendrogram visualization and cluster interpretation.
-This project demonstrates **Hierarchical Clustering** using synthetic data. We implement **Agglomerative Clustering**, visualize the **dendrogram**, and highlight how the algorithm builds a hierarchy of clusters.
+
+This repository demonstrates the concept of **Hierarchical Clustering**, one of the fundamental unsupervised learning techniques used to build nested clusters. It covers both major types:
+
+- **Agglomerative Clustering (Bottom-Up)** using `scikit-learn` and `scipy`
+- **Divisive Clustering (Top-Down)** using a simulated approach via `KMeans`
 
 ---
 
-## 📌 Key Concepts
+## 📌 What is Hierarchical Clustering?
 
-- **Hierarchical Clustering (Agglomerative)** – bottom-up approach
-- **Dendrograms** – visualize how clusters are formed step-by-step
-- **Linkage Methods** – using `ward` to minimize variance
-- **Cluster Assignment** – using `AgglomerativeClustering` from `scikit-learn`
+Hierarchical Clustering builds a hierarchy of clusters either by:
 
----
+- **Merging (Agglomerative)**: Starts with individual points and merges them into clusters step by step.
+- **Splitting (Divisive)**: Starts with all data in one cluster and splits it recursively.
 
-## 📊 Output Visualization
-
-- **Dendrogram**: Displays the hierarchy of cluster merging.
-- **Scatter Plot**: Visualizes final clusters using predicted labels.
+This approach is often visualized using a **dendrogram**.
 
 ---
 
-## 📦 Requirements
+## 🧠 Techniques Implemented
 
-- Python 3.x
+### ✅ Agglomerative Clustering (Bottom-Up)
+- Uses `scipy.cluster.hierarchy.linkage` and `dendrogram` for visualization
+- Uses `sklearn.cluster.AgglomerativeClustering` to form final clusters
+- Visualizes both the **dendrogram** and **cluster assignment**
+
+### ✅ Divisive Clustering (Top-Down)
+- Simulated via recursive **Bisecting KMeans**
+- Splits the dataset into 2 clusters at each step (depth-controlled)
+- Visualizes clusters at each stage of division
+
+---
+
+## 📊 Visualizations
+
+- **Dendrogram** to show how clusters are formed step-by-step (Agglomerative)
+- **Scatter plots** to visualize final cluster assignments for both approaches
+
+---
+
+## 🛠️ Libraries Used
+
 - `scikit-learn`
 - `scipy`
 - `matplotlib`
 - `numpy`
+
+---
