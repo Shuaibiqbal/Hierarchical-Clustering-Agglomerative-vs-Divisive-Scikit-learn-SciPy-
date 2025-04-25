@@ -48,3 +48,5 @@ This approach is often visualized using a **dendrogram**.
 - `numpy`
 
 ---
+
+for more clearification open notebook 
